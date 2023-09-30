@@ -1,0 +1,119 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* body{
+    line-height:1.5;
+    font-family: 'Poppins', sans-serif;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #26242b;
+    margin-bottom: 100px;
+
+}
+.footer-cal{
+    width: 25%;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+}
+
+.footer-cal h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+   
+}
+
+.footer-cal h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 1px;
+    box-sizing: border-box;
+    width: 60px;
+}
+
+.footer-cal ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-cal ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.footer-cal ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+
+.footer-cal .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    /* color: #ffff; */
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    margin-bottom:5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5%;
+    transition: all 0.5s ease;
+   
+}
+.footer-cal .social-links a:hover{
+    color: #26242b;
+    background-color: #ffffff; 
+}
+
+
+.footer-cal .fa-solid{
+    background-color:  #26242b;
+    color: #84af00;
+    
+}
+
+/* Responsive  */
+@media(max-width:767px){
+    .footer-cal{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px){
+    .footer-cal{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
